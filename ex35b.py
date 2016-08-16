@@ -54,6 +54,8 @@ def forest():
 		forest()
 	elif 'north' in choice:
 		start()
+	elif 'clearing' in choice:
+		start()
 	else:
 		print "Command not understood."
 		forest()
@@ -220,6 +222,7 @@ def win():
 	choice = raw_input ("> ")
 	
 	if 'y' in choice:
+		inv = []
 		start()
 		
 	elif 'n' in choice:
